@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MyWeather</title>
+     
+</head>
+<body>
+  <div id="ww">                    
+  </div>                    
+  <script>    window.onload = myFunction;
+    
+    var latitude = longitude = '';
+    function myFunction() {
+        var self = this;
+        navigator.geolocation.getCurrentPosition(function(pos) {
+            latitude =  pos.coords.latitude;
+            longitude = pos.coords.longitude;
+            //  alert ("Ва­ши­ ко­ор­ди­на­ты:­" + latitude + "  , ­" + longitude);
+        });    
+    }    
+  
+      var xhr = new XMLHttpRequest();
+      xhr.open('GET', 'https://fcc-weather-api.glitch.me/api/current?lat=' + latitude + '&lon=' + longitude , false);
+      xhr.send();
+     // alert(xhr.status);
+      // alert( xhr.responseText )    ;
+      document.getElementById('ww').innerHTML =   xhr.responseText    ;
+    
+    
+/*
+User Story: I can see the weather in my current location.
+
+User Story: I can see a different icon or background image (e.g. snowy mountain, hot desert) depending on the weather.
+
+User Story: I can push a button to toggle between Fahrenheit and Celsius.
+*/
+  </script>
+</body>
+</html>
