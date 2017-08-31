@@ -1,0 +1,30 @@
+body {background-color: lightblue }
+
+  button {  border-radius: 5px; display: block;
+            padding: 10px 20px;
+            margin: -5px auto 10px auto }
+
+  .fon {  background: url('all_seasons.jpg') 100% no-repeat;  
+          width: 1024px; margin:auto ;
+          border-right: 2px solid lightgreen; 
+          border-left: 2px solid lightgreen; 
+          border-top: 1px solid transparent; 
+          min-height: 768px
+          }
+
+  .content  { background-color: white; 
+              margin: 0 30%;
+              margin-top: 28%;
+              border: 2px solid lightgreen; 
+              border-radius: 20px }
+  .weather, city, p.t {font-size: 24px; color: gray; text-align:center; }
+  .weather, p.t { margin-bottom: 0 }
+  .temperature { font: bold  }
+
+  .icon     { width: 30px; height: 30px; 
+              padding: 15px; 
+              margin:auto;
+              background: no-repeat;
+            }
+          
+  
