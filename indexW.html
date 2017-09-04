@@ -9,20 +9,19 @@
 </head>
 
 <body>
-  <div class="fon" >
-    <div class="content" >
-      <p class="weather"> Weather in <span class="city"></span>  
-      </p>
-      <hr>
-      <p class="t">Temperature is
-        <span class="temperature"></span>  
-        <span class="standart"> C </span>
-      </p>
-      <p class="icon">  </p>
-      <button name='toggle'>Switch Celsius / Fahrenheit </button>               
-    </div>            
-  </div>   
-
+  
+  <div class="content" >
+    <p class="weather"> Weather in <span class="city"></span>  
+    </p>
+    <hr>
+    <p class="t">Temperature is
+      <span class="temperature"></span>  
+      <span class="standart">C</span>  <!-- Если символ температуры окружен пробелами, то работать не будет  -->
+    </p>
+    <p class="icon">  </p>
+    <button name='toggle'>Switch Celsius / Fahrenheit </button>               
+  </div>            
+   
   <script src="weather.js">  </script>
 </body>
 </html>

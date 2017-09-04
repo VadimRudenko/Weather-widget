@@ -11,10 +11,10 @@ function myFunction() {
     some = JSON.parse( xhr.responseText); //getting string with weather
    
     var city =  document.querySelector('.city'); //city name
-    city.textContent = some.name;                 
+    city.innerHTML = some.name;                 
 
     var temperature =  document.querySelector('.temperature');
-    temperature.textContent = some.main.temp.toFixed(1);
+    temperature.innerHTML = some.main.temp.toFixed(1);
 
     var icon =  document.querySelector('.icon');
     icon.style.backgroundImage = 'url(' +  some.weather[0].icon +  ')';    // weather icon             
